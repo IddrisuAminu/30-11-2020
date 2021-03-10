@@ -1,0 +1,25 @@
+.header {
+  background-color: blueviolet;
+  margin-left: 350px;
+  margin-right: 350px;
+  border-radius: 30px;
+}
+#container {
+  background-color: lawngreen;
+  text-align: center;
+  margin-left: 300px, 400px;
+  margin-right: 300px, 400px;
+  border: solid rgb(132, 192, 55) 30px;
+}
+#result {
+  color: white;
+  background-color: forestgreen;
+  padding: 30px;
+  font-size: 8rem;
+  margin-left: 550px;
+  margin-right: 550px;
+  border-radius: 30px;
+}
+body {
+  background-color: blue;
+}

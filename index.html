@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yison</title>
+    <link rel="icon" href="/mm.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Yison Tech Hub</h1>
+      <div id="photo">
+        <img src="aminu.jpg" alt="image" />
+        <div class="paa">
+          <p>
+          
+          </p>
+          <div class="hig">
+            <h3></h3>
+            <ol>
+              <li>set light installation</li>
+              <li>computer repairs</li>
+              <li>formatting</li>
+              <li>design</li>
+              <li>net working</li>
+              <li>web site development</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form action="">
+      <div class="cente">
+        <h1>Pleace pute your particular here</h1>
+        <input type="text" name="fname" placeholder="first name" class="ff" />
+        <input type="text" name="lname" placeholder="last name" />
+        <br />
+        <input type="text" name="community" placeholder="community" />
+        <input type="password" name="pass" placeholder="password" /><br />
+        <input type="date" name="dob" placeholder="date of birth" />
+        <div id="box">
+          <input type="checkbox" name="sex" value="male" />male
+          <input type="checkbox" name="sex" value="female" />female
+          <input type="radio" name="working" placeholder="employed" />unemployed
+          <input type="radio" name="working" value="unemployed" />unemployed
+        </div>
+      </div>
+    </form>
+    <input type="text" placeholder="gender" id="gender" />
+    <input type="text" placeholder="input title" id="newTitle" />
+    <button id="btn">change title</button>
+  </body>
+  <script>
+    // let name = "aminu";
+    // let ender = "male";
+    // alert("my name is " + name);
+    // alert("sex " + ender);
+    // alert("who is ghana president" + name);
+    // let school = prompt("which of the school did you like most");
+    // alert("The school i like best is " + school);
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", function () {
+      let newt = document.getElementById("newTitle").value;
+      document.getElementById("title").innerText = newt;
+      let gender = document.getElementById("gender").value;
+      if (gender === "Male") {
+        alert("you are male.");
+      } else if (gender === "Female") {
+        alert("you are a female");
+      } else {
+        alert("you have entered wrong gender please try later.");
+      }
+    });
+  </script>
+</html>
